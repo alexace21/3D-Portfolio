@@ -7,11 +7,11 @@ import { styles } from "../styles";
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-10 text-center'>
       {technologies.map((technology) => (
-        <div className='w-28 h-28 text-center' key={technology.name}>
+        <div className='w-28 h-28' key={technology.name}>
           <BallCanvas icon={technology.icon} />
-          <span className={`${styles.sectionSubText}`}>{technology.name}</span>
+          <span className={`${styles.sectionSubText} text-center`}>{technology.name}</span>
         </div>
       ))}
     </div>

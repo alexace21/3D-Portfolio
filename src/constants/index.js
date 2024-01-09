@@ -15,13 +15,12 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   softuni,
   commerzbank,
   threejs,
   dalle,
   tek,
-  smartreader,
+  sreader,
 } from "../assets";
 
 export const navLinks = [
@@ -111,10 +110,6 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
@@ -122,7 +117,6 @@ const experiences = [
     title: "JavaScript Web Developer",
     company_name: "SoftUni",
     icon: softuni,
-    //#383E56
     iconBg: "#E6DEDD",
     date: "September 2019 - December 2022",
     points: [
@@ -136,7 +130,6 @@ const experiences = [
     title: "Business/Technical Consultant",
     company_name: "TEK Experts",
     icon: tek,
-    //#383E56
     iconBg: "#E6DEDD",
     date: "December 2021 - December 2022",
     points: [
@@ -270,31 +263,10 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: smartreader,
+    image: sreader,
     source_code_link: "https://github.com/alexace21/Smart-Reader?tab=readme-ov-file",
     production_code_link: "https://earnest-belekoy-f7c68d.netlify.app/",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

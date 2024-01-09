@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close, logo2 } from "../assets";
+import { logo, menu, close } from "../assets";
 // GREAT AND SIMPLE NAVBAR
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -65,13 +66,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-          {/* Burger menu for smaller devices via toggler */}
+            {/* Burger menu for smaller devices via toggler */}
           {/* img Icon changes on Click */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
           {/* Based on device and click burger menu is diplayed or else hidden */}

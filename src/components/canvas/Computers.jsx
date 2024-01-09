@@ -87,13 +87,9 @@ const Computers = ({ isMobile, lights }) => {
   //     />
   //     <pointLight intensity={1} />
   //     <primitive
-  //     // reference
   //       object={computer.scene}
-  //       // SIZE
   //       scale={isMobile ? 0.7 : 0.75}
-  //       // POSITION on the display
   //       position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-  //       // ROTATION on the screen
   //       rotation={[-0.01, -0.2, -0.1]}
   //     />
   //   </mesh>
@@ -136,7 +132,6 @@ const ComputersCanvas = ({lights}) => {
       <Suspense fallback={<CanvasLoader />}>
         {/* OrbitControls allows us to move our model around using mouse input  */}
         <OrbitControls
-        // No zoom
           enableZoom={false}
           // Set boundaries and control over the ability to move the model
           maxPolarAngle={Math.PI / 2}

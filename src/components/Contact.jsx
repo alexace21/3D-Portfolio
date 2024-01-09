@@ -7,7 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -47,7 +46,7 @@ const Contact = () => {
           to_email: "alex.ace7ov@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -63,7 +62,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-          
+
           alert("Ahh, something went wrong. Please try again.");
         }
       );
@@ -80,6 +79,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
         {/* FORM BODY */}
         <form
           ref={formRef}
@@ -115,7 +115,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What do you want to say?'
+              placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

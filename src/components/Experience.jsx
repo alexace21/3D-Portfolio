@@ -13,7 +13,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
-  // VerticalTimelineElement provides us with the div body full of work experience content + company + company icon
+    // VerticalTimelineElement provides us with the div body full of work experience content + company + company icon
   return (
     <VerticalTimelineElement
       contentStyle={{
